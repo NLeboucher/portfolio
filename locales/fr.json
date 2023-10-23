@@ -1,0 +1,11 @@
+{
+    "hello": "azef",
+    "goodbye": "Good Bzazye",
+    "pageTitles": {
+        "about": "Abouzt",
+        "resume": "Reszume",
+        "portfolio": "Porztfolio",
+        "blog": "Bzlog",
+        "github": "Gitzhub"
+    }
+}
