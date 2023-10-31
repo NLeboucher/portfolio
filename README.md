@@ -1,7 +1,7 @@
-# About
+# ABOUT
 - Resume/Portfolio website using Vue (Nuxt 3) extends from [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio) and [agcrisbp](https://github.com/agcrisbp/ADResume).
 
-# Installations Required for Ubuntu
+# INSTALLATIONS REQUIRED FOR UBUNTU
 
 1. Clone this repo:
 ```
@@ -81,7 +81,7 @@ code .
 ```
 
 ---
-PROJECTS:
+# PROJECTS:
 - 1 Live Image Classifier Demo
     The canvas element is a rectangular area of the webpage that can be used to draw graphics. It is often used for games, animations, and other interactive content.
 
