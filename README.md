@@ -81,3 +81,26 @@ code .
 ```
 
 ---
+PROJECTS:
+- 1 Live Image Classifier Demo
+    The canvas element is a rectangular area of the webpage that can be used to draw graphics. It is often used for games, animations, and other interactive content.
+
+The canvas works by creating a bitmap image, which is a grid of pixels. Each pixel is represented by a color value. The canvas element can be used to draw shapes, lines, and text on the bitmap image.
+
+When the user stops drawing on the canvas, the canvas element fires a "mouseup" event. This event is handled by the JavaScript code, which calls the infer() method of the Canvas class. The infer() method uses the machine learning model to predict the digit that was drawn. The prediction is then displayed on the web page.
+
+The following is a more detailed pipeline of the information from the moment the user stops drawing the digits to the moment the digits is recognized and the result is shown:
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Canvas
+  participant Model
+
+  User ->> Canvas: mouseup
+  Canvas ->> Canvas: infer
+  Canvas ->> Model: probs
+  Model ->> Model: argmax
+  Canvas ->> Canvas: display prediction
+```
+    
