@@ -7,9 +7,9 @@ export default defineEventHandler(() => {
       title: 'Name',
       content: {
         en: 'English.',
-        id_ID: 'Indonesia.',
+        id_ID: 'Français.',
       },
-      image: '/images/.png',
+      image: '/public/flags/id_ID.png',
     },
   ]
 })

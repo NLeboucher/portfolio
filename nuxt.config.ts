@@ -10,29 +10,22 @@ export default defineNuxtConfig({
     reactivityTransform: true,
     viteNode: false,
   },
-  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }
-  ],
+  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
   colorMode: {
     classSuffix: '',
   },
-  // https://github.com/nuxt/framework/issues/6204#issuecomment-1201398080
   hooks: {
     'vite:extendConfig': function (config: any, { isServer }: any) {
       if (isServer) {
-        // Workaround for netlify issue
-        // https://github.com/nuxt/framework/issues/6204
-        config.build.rollupOptions.output.inlineDynamicImports = true
+        config.build.rollupOptions.output.inlineDynamicImports = true;
       }
     },
   },
-  css: [
-    // 'primevue/resources/themes/bootstrap4-dark-blue/theme.css',
-    // 'primevue/resources/primevue.css',
-    // 'primeicons/primeicons.css',
-    '/assets/css/style.css',
-  ],
+  css: ['/assets/css/style.css'],
   build: {
     transpile: ['primevue', 'pinia-orm'],
+    vite: false,
+    
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -47,11 +40,17 @@ export default defineNuxtConfig({
       warn: false,
     },
     compilerOptions: {
-      isCustomElement: tag => tag.startsWith('ion-'),
+      isCustomElement: (tag) => tag.startsWith('ion-'),
     },
   },
   loading: {
     color: 'blue',
     height: '5px',
   },
-})
+  
+  // GitHub Pages configuration
+  target: 'static',
+  router: {
+    base: '/portfolio/' // Update with your GitHub repository name
+  },
+});

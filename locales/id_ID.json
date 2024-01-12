@@ -1,11 +1,11 @@
 {
-    "hello": "Halo",
-    "goodbye": "Sampai jumpa",
+    "hello": "Bonjour",
+    "goodbye": "Au Revoir",
     "pageTitles": {
-        "about": "Tentang",
-        "resume": "Pengalaman",
-        "portfolio": "Proyek",
-        "blog": "Artikel",
+        "about": "A Mon Sujet",
+        "resume": "Résumé",
+        "portfolio": "Portfolio",
+        "blog": "Demos",
         "github": "Github"
     }
 }
